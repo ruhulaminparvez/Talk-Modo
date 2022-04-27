@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     # Installed Apps
     'core',
+    'room',
 ]
 
 MIDDLEWARE = [
