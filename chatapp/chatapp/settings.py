@@ -67,7 +67,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'chatapp.wsgi.application'
-ASGI_APPLICATION = 'chatapp.routing.application'
+ASGI_APPLICATION = 'chatapp.asgi.application'
+
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    }
+}
 
 
 # Database
