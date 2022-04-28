@@ -35,6 +35,8 @@
 
 <script>
     const roomName = JSON.parse(document.getElementById('json-roomname').textContent);
+    const userName = JSON.parse(document.getElementById('json-username').textContent);
+
     const chatSocket = new WebSocket(
         'ws://' 
         + window.location.host 
@@ -50,7 +52,6 @@
         const data = JSON.parse(e.data);
 
         if(data.message){
-
             let html = '<div class="p-4 bg-gray-200 rounded-xl">';
                 html += '<p class="font-semibold">' + data.username + '</p>';
                 html += '<p>' + data.message + '</p></div>';
