@@ -1,12 +1,19 @@
 {% extends 'core/base.html' %}
 
+{% load static %}
 
 {% block title %}Welcome | {% endblock %}
     
 {% block content %}
 
 <div class="p-10 lg:p-20 text-center" >
-    <h1 class="text-3xl lg:text-6xl text-white">ChatApp</h1>
+    <h1 class="text-3xl lg:text-6xl text-white">Talk Modo - ChatApp</h1>
+    <p class="text-white text-center p-4" style="font-size: 22px">
+        Goto Rooms to chat with your friends
+    </p>
+    <div>
+        <img src="{% static 'img/welcome-note.svg' %}" style="display: block; margin-left: auto; margin-right: auto; width: 50%; margin-top: 50px">
+    </div>
 </div>
 
 {% endblock %}

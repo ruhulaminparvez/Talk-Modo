@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}Talk-Modo</title>
-
+    <link rel="icon" href="{% static 'icon/talk-modo.ico' %}">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-teal-600">
@@ -35,7 +36,7 @@
 
     {% endblock %}
 
-
+    {% include 'core/footer.html' %}
     
 </body>
 </html>
